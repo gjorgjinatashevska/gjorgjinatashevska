@@ -1,0 +1,20 @@
+.owl-carousel .owl-item {
+    position: relative;
+    min-height: 1px;
+    float: left;
+    }
+  .owl-carousel .owl-item img {
+    display: block;
+    width: 100%; }
+  .owl-carousel .owl-nav.disabled,
+  .owl-carousel .owl-dots.disabled {
+    display: none; }
+
+
+
+  .owl-carousel.owl-loaded {
+    display: block; }
+  .owl-carousel.owl-loading {
+    opacity: 0;
+    display: block; }
+

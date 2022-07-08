@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator in C++</title>
+</head>
+<body>
+<div>
+<p>
+    # include <iostream> <br>
+    using namespace std; <br>
+    int main() {
+    <br>
+    char op;
+    <br>
+    float num1, num2;
+    <br>
+    cout << "Enter operator: +, -, *, /: ";
+    <br>cin >> op;
+
+    <br>cout << "Enter two operands: ";<br>
+    cin >> num1 >> num2;<br>
+
+    switch(op) {<br>
+
+    case '+':
+    <br>cout << num1 << " + " << num2 << " = " << num1 + num2;
+    <br>break;
+
+    <br>case '-':
+    <br>cout << num1 << " - " << num2 << " = " << num1 - num2;
+    <br>break;
+
+    <br>case '*':
+    <br>cout << num1 << " * " << num2 << " = " << num1 * num2;
+    <br>   break;
+
+    <br>case '/':
+    <br> cout << num1 << " / " << num2 << " = " << num1 / num2;
+    <br>break;
+
+    <br> default:<br>
+    cout << "Error! operator is not correct";<br>
+    break;<br>
+    }<br>
+
+    return 0;<br>
+    }<br>
+</p>
+</div>
+</body>
+</html>

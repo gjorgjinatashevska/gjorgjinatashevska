@@ -1,0 +1,369 @@
+html{
+    scroll-behavior: smooth;
+    cursor:inherit;
+}
+.d3 {
+    margin: 0.5em 0;
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 2em;
+    color: #22313F ;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    text-shadow: -0.09em 0 0 plum,  0.09em 0 0 purple;
+}
+.h3{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: plum;
+    color: midnightblue;
+
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: mediumpurple;
+}
+
+a:hover {
+	color: mediumpurple;
+    text-decoration: none;
+}
+
+p {
+    font-size: 13px;
+    line-height: 22px;
+}
+.slikadiv{
+    float:right;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+.button {
+    float: left;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    background: purple;
+    overflow: hidden;
+    border-radius: 50px;
+}
+
+.button span {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 60px;
+    margin-left: 10px;
+}
+
+.button:hover {
+    width: 200px;
+}
+
+.button:nth-child(1):hover .icon {
+    background: palevioletred;
+}
+
+.button:nth-child(2):hover .icon {
+}
+
+.button:nth-child(3):hover .icon {
+    background: plum;
+}
+
+.button:nth-child(4):hover .icon {
+    background: #0e76a8;
+}
+
+.button:nth-child(5):hover .icon {
+    background: #ff0000;
+}
+
+.button:nth-child(6):hover .icon {
+    background: #333;
+}
+
+.button:nth-child(1) span {
+    color: #e1306c;
+}
+
+.button:nth-child(2) span {
+    color: #4267b2;
+}
+
+.button:nth-child(3) span {
+    color: #1da1f2;
+}
+
+.button:nth-child(4) span {
+    color: #0e76a8;
+}
+
+.button:nth-child(5) span {
+    color: #ff0000;
+}
+
+.button:nth-child(6) span {
+    color: #333;
+}
+
+.button .icon {
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    border-radius: 50px;
+    display: inline-block;
+}
+
+.button .icon i {
+    font-size: 25px;
+    line-height: 60px;
+}
+
+.button:hover i {
+    color: #fff;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.section-heading h2:before {
+    width: 1px;
+    height: 100px;
+    background-color: rgba(250,250,250,0.1);
+    position: absolute;
+    top: -102px;
+    content: '';
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.section-heading h2 {
+    margin-top: 100px;
+    position: relative;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 0.5px;
+    display: inline-block;
+    padding: 15px 20px;
+    border: 2px solid rgba(250,250,250,0.1);
+}
+
+
+/* Buttons */
+
+.main-button a {
+    background: mediumpurple;
+    color: #fff;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+    padding: 12px 20px;
+    display: inline-block;
+    outline: none;
+}
+
+/* Header */
+
+
+.main-header {
+    background-color: rgba(22,34,57,0.95);
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+
+.main-header .logo a em {
+    font-style: normal;
+    color: mediumpurple;
+}
+
+.main-menu {
+    float: right;
+    padding-right: 60px;
+}
+
+.main-menu li {
+    display: inline-block;
+    line-height: 79px;
+    margin-left: 15px;
+    position: relative;
+}
+
+.main-menu li:first-child {
+    margin-left: 0px;
+}
+
+.main-menu li a {
+    padding: 10px 15px;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+    color: #fff;
+    border: 2px solid transparent;
+    transition: all 0.5s;
+}
+
+
+.main-nav li:hover a,
+.main-nav li.active a {
+    border: 2px solid mediumpurple;
+}
+
+
+/* Slider */
+
+.main-banner {
+    display: none;
+
+}
+
+section.why-us {
+
+    background:mediumpurple;
+
+}
+
+.wrapper{position: relative;}
+
+.wrapper :is(.btn, .link){
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background: #FFFFFF;
+    color: #151515;
+    border-radius: 50%;
+}
+
+.btn{
+    position: absolute;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+    transition: outline .25s;
+}
+.active .btn,
+.btn:hover{
+    outline: 5px solid #bb93fc;
+    outline-offset: -4px;
+}
+
+.item{
+    position: absolute;
+    list-style: none;
+    transition: transform .5s;
+    transition-delay: var(--d);
+}
+
+.wrapper.active .item:nth-child(1){
+    transform:  translateX(-65px);
+}
+
+.wrapper.active .item:nth-child(2){
+    transform:  translateY(-65px);
+}
+
+.wrapper.active .item:nth-child(3){
+    transform:  translateX(65px);
+}
+
+/* Courses */
+
+section.courses {
+    background-size: cover;
+    background-color: #172238;
+    padding-bottom: 100px;
+    padding: 0px 30px 100px 30px;
+}
+
+section.courses .item img {
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+section.courses .item .down-content {
+    padding: 30px;
+    background-color: #fff;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+section.courses .item .down-content h4 {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #1e1e1e;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+section.courses .item .down-content p {
+    margin-bottom: 25px;
+}
+
+section.courses .item .down-content img {
+    width: 40px;
+    border: 2px solid #f5a425;
+    border-radius: 50%;
+    text-align: left;
+    display: inline-block;
+}
+
+
+
+/* Contact */
+
+section.contact {
+
+    background-size: cover;
+    background-color: #172238;
+    padding-bottom: 120px;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #152036;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 0px;
+    padding: 25px 0px;
+    color: #fff;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+footer p {
+    font-size: 10px;
+    font-weight: 50;
+    letter-spacing: 0.20px;
+  }
